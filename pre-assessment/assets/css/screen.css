@@ -19,6 +19,28 @@ body {
 	color:lightsteelblue;
 }
 
+img{
+	float:right;
+	margin:0 0 20px 20px;
+	border:lightblue;
+	padding: 30 px;
+}
+
+h2{
+	background-color: cyan;
+	color:darkblue;
+}
+
+h3{
+	background-color: deeppink;
+	color:white;
+}
+
+h4{
+	background-color: thistle;
+	color:darkolivegreen;
+}
+
 #container {
 	max-width: 800px;
 	margin-right: auto;
