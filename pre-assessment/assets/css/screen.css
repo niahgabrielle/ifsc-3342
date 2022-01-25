@@ -1,4 +1,4 @@
-/*------------Box Sizing------------*/
+/*------------Universal Selector------------*/
 
 * {
 	margin: 0px;
@@ -15,30 +15,15 @@ body {
 }
 
 .alert{
-	background-color: rebeccapurple;
-	color:lightsteelblue;
+	color: rebeccapurple;
 }
 
-img{
+.img-right{
 	float:right;
 	margin:0 0 20px 20px;
-	border:lightblue;
-	padding: 30 px;
-}
-
-h2{
-	background-color: cyan;
-	color:darkblue;
-}
-
-h3{
-	background-color: deeppink;
-	color:white;
-}
-
-h4{
-	background-color: thistle;
-	color:darkolivegreen;
+	border:1px solid lightblue;
+	padding:10px;
+	margin-left:20px;
 }
 
 #container {
@@ -109,6 +94,24 @@ h4{
 	margin-top: 5px;
 	margin-bottom: 15px;
 }
+
+#content a:hover{
+	color:lavender;
+	text-decoration:none;
+}
+
+h2{
+	color:steelblue;
+}
+
+h3{
+	background-color:pink;
+}
+
+h4{
+	background-color: thistle;
+}
+
 #footer {
 	background-color: #000;
 	color: #FFF;
