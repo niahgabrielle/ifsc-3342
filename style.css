@@ -1,0 +1,25 @@
+body{
+  font-family: 'DM Serif Display', serif;
+  line-height:1.5;
+  background-color:mediumpurple;
+  text-align:center;
+}
+
+h1{
+    color:#ffffff;
+    text-shadow: 1px 2px #000000;
+    font-size:70px;
+  }
+
+  ul li{
+    text-decoration:none;
+    padding:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+  }
+
+  ul li a{
+    color:khaki;
+    font-size:30px;
+  }
