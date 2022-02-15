@@ -23,36 +23,43 @@ html {
 
 
 .container{
-    width:978px;
+    /*978px*/
+    width:70vw;
     margin:30px auto;
     border:3px solid pink;
-    background-image:url(../img/grid.jpg)
 }
 
 header.primary{
+    /*918px*/
     background:rgba(0,0,0,.3);
-    width:918px;
-    margin:30px;
+    width:93.865%;
+    margin:3.067%;
     float:left;
+    padding:3.267%;
 }
 
 #content{
     background:rgba(0,0,0,.3);
     float:left;
-    width:602px;
-    margin-left:30px;
+    /*602px*/
+    width:61.554%;
+    margin-left:3.067%;
+    padding:3.267%;
 }
 
 aside{
-    width:286px;
+    /*286px*/
+    width:29.243%;
     float:left;
     background:rgba(0,0,0,.3);
-    margin-left:30px;
+    margin-left:3.067%;
+    padding:3.267%;
 }
 
 footer.primary{
     background:rgba(0,0,0,.3);
-    width:918px;
-    margin:30px;
+    width:93.865%;
+    margin:3.067%;
     float:left;
+    padding:3.267%;
 }
