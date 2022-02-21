@@ -63,3 +63,22 @@ footer.primary{
     float:left;
     padding:3.267%;
 }
+
+@media screen and (max-width:950px){
+  .col{
+    float:none;
+    width:100%;
+    margin: 30px auto;
+  }
+  
+  .col:nth-child(odd){
+    background:indianred	;
+  } 
+}
+
+@media screen and (min-width:200px){
+  .col {
+    width:35%;
+    margin:4%;
+  }
+}
