@@ -73,12 +73,36 @@ footer.primary{
   
   .col:nth-child(odd){
     background:indianred	;
-  } 
+  }
 }
 
-@media screen and (min-width:200px){
+@media screen and (min-width:700px){
   .col {
     width:35%;
     margin:4%;
+  }
+}
+
+/*Tablet*/
+
+@media screen and (min-width:768px){
+  .col{
+    float:left;
+    width:50;
+    margin: 0 auto;
+  }
+  .container{
+    max-width:1024px;
+  }
+}
+
+/*Desktop*/
+
+@media screen and (min-width:1200px){
+  .col{
+    width:25%;
+  }
+  .container{
+    max-width:1600px;
   }
 }
