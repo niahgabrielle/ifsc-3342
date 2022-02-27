@@ -96,6 +96,15 @@ textarea {
     max-width:100%;
     height:auto;
   }
+
+  body{
+    font-family: 'Rafont-family', serif;
+    line-height:1.5;
+    background:dimgrey;
+    text-align:center;
+    color:white;
+  }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
