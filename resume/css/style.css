@@ -94,16 +94,74 @@ textarea {
   
   img {
     max-width:100%;
-    height:auto;
   }
 
   body{
     font-family: 'Rafont-family', serif;
     line-height:1.5;
-    background:dimgrey;
+    background:steelblue;
     text-align:center;
     color:white;
   }
+
+  h1{
+    font-size:50px;
+  }
+
+  a:link, a:visited{
+    color:white;
+  }
+
+  .container{
+    max-width:400px;
+    margin:0 auto;
+    background:rgba(0,0,0,.1)
+  }
+
+  nav.primary{
+    display:grid;
+    grid-template-columns:repeat(4,2fr);
+    padding: 20px 20px 0px 20px;
+    grid-gap:20px;
+  }
+
+  nav a:link, nav a:visited{
+    border:1px solid white;
+    text-align:center;
+    color:white;
+    font-size:15px;
+    padding: 10px 20px;
+  }
+
+  nav a:hover {
+    background:black;
+  }
+
+  main{
+    padding:2px 20px;
+  }
+
+  dl{
+    display:grid;
+    grid-template:auto/ 1fr 2fr;
+  }
+
+  dt{
+    font-weight:1000;
+    grid-column:1;
+    padding:10px 0;
+    border-bottom:2px solid black;
+    border-style:groove;
+  }
+  
+  dd{
+    margin:0;
+    grid-column:2;
+    padding:10px 0;
+    border-bottom:2px solid black;
+    border-style:groove;
+  }
+
 
 /* ==========================================================================
    Helper classes
