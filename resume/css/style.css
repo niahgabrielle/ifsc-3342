@@ -203,6 +203,42 @@ textarea {
     padding-bottom:20px;
   }
 
+  fotter{
+    text-align:center;
+    padding:20px 0;
+  }
+
+  .page-title{
+    grid-area:title;
+  }
+
+  #about{
+    grid-area:about;
+  }
+
+  #skills{
+    grid-area:skills;
+  }
+
+  #experience{
+    grid-area:experience;
+  }
+
+  #education{
+    grid-area:education;
+  }
+
+  main{
+    display:grid;
+    grid-gap:20px;
+    grid-template-areas:
+    "title"
+    "about"
+    "education"
+    "experience"
+    "skills";
+  }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
