@@ -94,6 +94,7 @@ textarea {
   
   img {
     max-width:100%;
+    height:auto;
   }
 
   body{
@@ -113,7 +114,7 @@ textarea {
   }
 
   .container{
-    max-width:400px;
+    max-width:500px;
     margin:0 auto;
     background:rgba(0,0,0,.1)
   }
@@ -162,6 +163,45 @@ textarea {
     border-style:groove;
   }
 
+  .related-links{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    padding:0;
+  }
+
+  .related-links .svg-inline--fa{
+    font-size:25px;
+    padding-top:20px;
+  }
+  
+  .related-links a{
+    border:1px solid yellow;
+    padding:12px 6px;
+    text-align:center;
+    text-decoration:none;
+    color:black;
+    font-size:15px;
+    background:rgba(0,0,0,.4);
+    color:#fff;
+  }
+  
+  .related-links a:hover{
+    background:rgba(0,0,0,.95);
+  }
+  
+  .related-links li{
+    margin-right:20px;
+  }
+
+  #skills li{
+    list-style-type:circle;
+  }
+
+  .job, .certificate{
+    border-bottom:2px solid yellow;
+    padding-bottom:20px;
+  }
 
 /* ==========================================================================
    Helper classes
