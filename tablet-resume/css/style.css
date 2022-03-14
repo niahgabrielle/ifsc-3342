@@ -118,7 +118,7 @@ textarea {
   
   nav.primary {
     display:grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 2fr);
     padding:20px 20px 0px 20px;
     grid-gap:20px;
   }
@@ -137,10 +137,10 @@ textarea {
   }
   
   main {
-    padding: 2px 20px;
+    padding:2px 20px;
   }
   
-  main h1 {
+  main h1{
     display:flex;
     flex-direction:row;
     justify-content:center;
@@ -151,22 +151,24 @@ textarea {
   main h1:before, main h1:after{
     background-color:black;
     content:"\a0";
-    flex-grow:2;
+    flex-grow:1;
     height:2px;
     position:relative;
     top:14px;
   }
-  main h1:before {
-    margin-right: 10px;
+
+  main h1:before{
+    margin-right:10px;
   }
 
-  main h1:after {
-    margin-left: 10px;
+  main h1:after{
+    margin-left:10px;
   }
   
   dl{
     display:grid;
     grid-template:auto/1fr 2fr;
+
   }
   
   dt{
