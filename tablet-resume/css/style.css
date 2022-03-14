@@ -91,10 +91,11 @@ textarea {
   }
   
   body{
-    font-family: 'Rafont-family', serif;
+    font-family:'Rafont-family', serif;
+    text-align:center;
   }
     
-  img {
+  img{
     max-width:100%;
     height:auto;
   }
@@ -127,12 +128,12 @@ textarea {
     padding:10px 20px;
     text-align:center;
     text-decoration:none;
-    color:white;
+    color:black;
     font-size:15px;
   }
   
   nav a:hover {
-    background:black;
+    background:khaki;
   }
   
   main {
@@ -145,15 +146,15 @@ textarea {
     justify-content:center;
     text-align:center;
     font-weight:400;
-    font-variant:small-caps;
   }
+
   main h1:before, main h1:after{
-    background-color: #222;
+    background-color:black;
     content:"\a0";
-    flex-grow:1;
-    height:1px;
+    flex-grow:2;
+    height:2px;
     position:relative;
-    top:0.77em;
+    top:14px;
   }
   main h1:before {
     margin-right: 10px;
@@ -164,7 +165,7 @@ textarea {
   }
   
   dl{
-    display: grid;
+    display:grid;
     grid-template:auto/1fr 2fr;
   }
   
@@ -196,7 +197,7 @@ textarea {
   }
   
   .related-links a{
-    border:1px solid yellow;
+    border:1px solid khaki;
     padding:12px 6px;
     text-align:center;
     text-decoration:none;
@@ -214,12 +215,12 @@ textarea {
     margin-right:20px;
   }
   
-  #skills li {
+  #skills li{
     list-style-type:circle;
   }
   
   .job, .certificate{
-    border-bottom:2px solid yellow;
+    border-bottom:2px solid khaki;
     padding-bottom:20px;
   }
   
@@ -260,7 +261,7 @@ textarea {
     grid-area:education;
   }
   
-  main {
+  main{
     display:grid;
     grid-gap:20px;
     grid-template-areas:
@@ -270,45 +271,60 @@ textarea {
     "experience"
     "education";
   }
+
+  main.container {
+    display:flex;
+    flex-flow:row wrap;
+  }
   
+  main.container> *{
+    flex:1 100%;
+  }
   
-  /*----------------------Media Queries-----------------------*/
+  .page-title {
+    order:0;
+  }
+
+  #about {
+    order:1;
+  }
+
+  #skills {
+    order:2;
+  }
+
+  #experience {
+    order:3;
+  }
+
+  #education {
+    order:4;
+  }
+  
+  /*--------------Media Queries-----------------*/
+  
+  @media only screen and (min-width: 700px) {
+    main.container {
+      max-width: 900px;
+    }
+
+    header.container{
+      max-width: 900px;
+    }
   
   @media screen and (min-width:768px){
-    
-    .container{max-width:900px;}
-    main.container {
-      grid-template-columns: 36.5% auto;
+     .container{max-width:900px;
+    }
+
+    main.container{
+      grid-template-columns:36.5% auto;
       grid-template-areas:
         "title title"
         "about about"
         "skills experience"
-        ". education";
+        ".education";
     }
-    
-    #about{
-      display:grid;
-      grid-gap:2em;
-      grid-template-columns: 300px 1fr auto;
-      grid-template-areas:
-      "bio details details"
-      "related related related";
-    }
-    
-  .bio{
-    grid-area:bio;
   }
-
-  .details{
-    grid-area:details;
-  }
-
-  .related-links{
-    grid-area:related;
-    border-bottom:1px solid #999;
-    padding-bottom:50px
-  }
-  
   }
 
 /* ==========================================================================
@@ -353,13 +369,13 @@ textarea {
 
 .visually-hidden.focusable:active,
 .visually-hidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
+  clip:auto;
+  height:auto;
+  margin:0;
+  overflow:visible;
+  position:static;
+  white-space:inherit;
+  width:auto;
 }
 
 /*
