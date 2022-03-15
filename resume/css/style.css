@@ -129,17 +129,43 @@ textarea {
   nav a:link, nav a:visited{
     border:1px solid white;
     text-align:center;
-    color:white;
+    color:black;
     font-size:15px;
-    padding: 10px 20px;
+    padding:10px 20px;
   }
 
   nav a:hover {
-    background:black;
+    background:khaki;
   }
 
   main{
     padding:2px 20px;
+    display:grid;
+  }
+
+  main h1{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    text-align:center;
+    font-weight:400;
+  }
+
+  main h1:before, main h1:after{
+    background-color:black;
+    content:"\a0";
+    flex-grow:1;
+    height:2px;
+    position:relative;
+    top:14px;
+  }
+
+  main h1:before{
+    margin-right:10px;
+  }
+
+  main h1:after{
+    margin-left:10px;
   }
 
   dl{
@@ -176,7 +202,7 @@ textarea {
   }
   
   .related-links a{
-    border:1px solid yellow;
+    border:1px solid khaki;
     padding:12px 6px;
     text-align:center;
     text-decoration:none;
@@ -199,8 +225,16 @@ textarea {
   }
 
   .job, .certificate{
-    border-bottom:2px solid yellow;
+    border-bottom:2px solid khaki;
     padding-bottom:20px;
+  }
+
+  .job *[itemprop="jobTitle"], 
+  .job *[itemprop="name"], 
+  .job *[itemprop="url"], 
+  .job *[itemprop="addressLocality"],
+  .certificate *[itemprop="name"]{
+    display:block;
   }
 
   footer{
@@ -241,19 +275,40 @@ textarea {
 
   /*----------------Media Queries-------------*/
 
-  @media screen and (min-width:768px){
-    .container{
-      max-width:850px;
+  @media only screen and (min-width: 768px) {
+    main.container {
+      max-width: 900px;
     }
 
     main{
-      grid-template-columns: 40% auto;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap:20px;
       grid-template-areas:
       "title title"
       "about about"
-      "education"
-      "experience"
-      "skills";
+      "experience skills"
+      "education education";
+    }
+
+    header.container{
+      max-width: 900px;
+    }
+  }
+
+
+  @media screen and (min-width:992px){
+    .container{
+      max-width:1400px;
+    }
+
+    main.container{
+      grid-template-columns:36.5% auto;
+      grid-template-areas:
+        "title title"
+        "about about"
+        "skills experience"
+        ".education";
     }
   }
 
