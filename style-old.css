@@ -1,0 +1,37 @@
+/* ---------------Box Sizing----------------- */
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+body{
+  font-family: 'DM Serif Display', serif;
+  line-height:1.5;
+  background-color:rebeccapurple;
+  text-align:center;
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+h1{
+    color:#ffffff;
+    text-shadow: 1px 2px #000000;
+    font-size:70px;
+  }
+
+  ul li{
+    text-decoration:none;
+    padding:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+  }
+
+  ul li a{
+    color:khaki;
+    font-size:30px;
+  }
