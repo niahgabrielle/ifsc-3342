@@ -1,53 +1,47 @@
 body {
-    --typeface:"Niramit", sans-serif;
+    --typeface:"DM Serif Display", serif;
   }
   
-  $typeface: "Niramit", sans-serif;
-  $background-color: #c0c0c0;
-  $primary-color: #999;
-  $radius: 20px;
-  $margin: 20px;
-  $margin-small: 10px;
-  
-  /* Mixin Example*/
-  
-  @mixin background-opacity($color, $opacity) {
-    background: $color; /* The Fallback */
-    background: rgba($color, $opacity);
-  }
+  $typeface: "DM Serif Display", serif;
+  $background-color:rebeccapurple;
+  $primary-color:khaki;
+  $padding:0px;
+  $background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
   
   html {
     box-sizing: border-box;
   }
   *,
   *:before,
-  *:after {
-    box-sizing: inherit;
+  *:after{
+    box-sizing:inherit;
   }
   
   body {
-    font-family: $typeface;
+    font-family:$typeface;
   }
   
-  section {
+  section{
     font-family:var(--typeface);
-    
-    max-width: 80vw;
-    display: flex;
-    margin: $margin-small auto;
-    background: $background-color;
-    border-radius: $radius;
+    display:flex;
+    background:$background-image;
   
     article {
       margin: $margin;
       border-radius: $radius;
       border: 1px solid #c0c0c0;
-      padding: 1em;
-      flex-grow: 1;
-      @include background-opacity(#000, 0.15);
+      padding:$padding;
   
-      &.post {
-        border: 1px solid darken($primary-color, 40%);
+  ul{
+    li{
+      text-decoration:none;
+      padding:0;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-around;
       }
+    li a{
+      color:$primary-color;
+      font: size 30px;
     }
-  }  
+  }

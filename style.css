@@ -1,5 +1,5 @@
 body {
-  --typeface:"Niramit", sans-serif;
+  --typeface:"DM Serif Display", serif;
 }
 
 /* Mixin Example*/
@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  font-family: "Niramit", sans-serif;
+  font-family: "DM Serif Display", serif;
 }
 
 section {
@@ -22,7 +22,7 @@ section {
   max-width: 80vw;
   display: flex;
   margin: 10px auto;
-  background: #c0c0c0;
+  background: rebeccapurple;
   border-radius: 20px;
 }
 section article {
@@ -32,9 +32,8 @@ section article {
   padding: 1em;
   flex-grow: 1;
   background: #000;
-  /* The Fallback */
   background: rgba(0, 0, 0, 0.15);
 }
 section article.post {
-  border: 1px solid #333333;
+  border: 1px solid #999999;
 }/*# sourceMappingURL=style.css.map */
