@@ -1,4 +1,12 @@
-.card{
+body{
+  font-family: "Goudy Old Style", serif;
+  font-style:normal;
+  font-variant:normal;
+  line-height:1.5;
+  margin-bottom:60px;
+  } 
+
+  .card{
     margin-bottom:25px;
   }
   
@@ -6,10 +14,7 @@
     position:relative;
     min-height:100%;
   }
-  
-  body{
-    margin-bottom:60px;
-  }
+
   .footer{
     position:absolute;
     color: white;
@@ -22,4 +27,9 @@
 
   .display-1,.lead{
     text-align:center;
+  }
+
+  img {
+    max-width:100%;
+    height:auto;
   }
