@@ -2,15 +2,19 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
 
 img{
+    background-image: url(../img/shrekk.jpg); 
     width:100%;
 }
 
-#main {width: 100%; padding:0;}
-.content-asset p {margin:0 auto;}
-.breadcrumb {display:none;}
+#main{
+    width: 100%; 
+    padding:0;
+}
 
-.margin-top-10 {padding-top:10px;}
-.margin-bot-10 {padding-bottom:10px;}
+.margin-top-10, .margin-bot-10{
+    padding-top:10px;
+    padding-bottom:10px;
+}
 
 #shrekbts h1{
     font-family:'Oswald', sans-serif; 
@@ -32,6 +36,7 @@ img{
     z-index:10; 
     opacity:.9;
 }
+
 #shrekbts h3{
     font-family:'Oswald', sans-serif; 
     font-size:14px; 
@@ -60,113 +65,60 @@ img{
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-.sc {color: #3b8595;}
-.ny {color: #3d3c3a;}
-.atw {color: #c48660;}
-
-#shrekbts .title {
+#shrekbts.title {
     background: white; 
-    padding: 60px; 
+    padding:60px; 
     margin:0 auto; 
     text-align:center;
 }
-#shrekbts .title h1 {
+
+#shrekbts.title h1 {
     font-size:35px; 
     letter-spacing:8px;
 }
 
-#shrekbts.block {
+#shrekbts.block{
     background: white; 
-    padding: 60px; 
+    padding:60px; 
     width:820px; 
     margin:0 auto; 
     text-align:justify;
 }
 
-#shrekbts.block-gray{
-    background: #f2f2f2;
-    padding: 60px;
+#shrekbts.shrek, #shrekbts.fiona, #shrekbts.donkey, #shrekbts.puss{
+    padding-top:200px;
+    padding-bottom:200px;
+    overflow:hidden;
+    position:relative;
+    width:100%;
+    background-attachment:fixed;
+    background-size:cover;
+    -moz-background-size:cover;
+    -webkit-background-size:cover;
+    background-repeat:no-repeat;
+    background-position:top center;
 }
 
-#shrekbts.section-overlay-mask{
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%; 
-    background-color: black; 
-    opacity: 0.70;
+#shrekbts.shrek{
+    background-image: url(../img/shrek0.jpg); 
 }
 
-#shrekbts.shrek {
-    padding-top: 200px; 
-    padding-bottom: 200px; 
-    overflow: hidden; 
-    position: relative; 
-    width: 100%; 
-    background-image: url(../img/shrekk.jpg); 
-    background-attachment: fixed; 
-    background-size: cover; 
-    -moz-background-size: cover; 
-    -webkit-background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: top center;
-}
 #shrekbts.fiona{
-    padding-top: 200px; 
-    padding-bottom: 200px; 
-    overflow: hidden; 
-    position: relative; 
-    width: 100%; 
     background-image: url(../img/fiona0.jpg); 
-    background-attachment: fixed; 
-    background-size: cover; 
-    -moz-background-size: cover; 
-    -webkit-background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center center;
 }
 
 #shrekbts.donkey{
-    padding-top: 200px; 
-    padding-bottom: 200px; 
-    overflow: hidden; 
-    position: relative; 
-    width: 100%; 
-    background-image: url(../img/donkey0.jpg); 
-    background-attachment: fixed; 
-    background-size: cover; 
-    -moz-background-size: cover; 
-    -webkit-background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center center;
+    background-image: url(../img/donkey0.jpg);
 }
 
 #shrekbts.puss{
-    padding-top: 200px; 
-    padding-bottom: 200px; 
-    overflow: hidden; 
-    position: relative; 
-    width: 100%; 
-    background-image: url(../img/puss0.jpg); 
-    background-attachment: fixed; 
-    background-size: cover; 
-    -moz-background-size: cover; 
-    -webkit-background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center center;
+    background-image: url(../img/puss0.jpg);
 }
 
-#shrekbts .line-break{
-    border-bottom:1px solid black; 
-    width: 150px; 
-    margin:0 auto;
-}
-
-@media screen and (max-width: 959px) and (min-width: 768px) {
+@media screen and (max-width: 959px) and (min-width: 768px){
   #shrekbts.block {padding: 40px; width:620px;}
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px){
   #shrekbts.block {padding: 30px; width:420px;}
   #shrekbts h2 {font-size:30px;}
   #shrekbts .block {padding: 30px;}
