@@ -1,5 +1,5 @@
 body{
-  font-family:'Oswald', sans-serif
+  font-family:'Oswald', sans-serif;
   font-style:normal;
   font-variant:normal;
   line-height:1.5;
@@ -10,8 +10,14 @@ body{
   .card{
     margin-bottom:25px;
   }
+
+  .container{
+    width:80vw;
+    margin:40px auto;
+    max-width:800px;
+    }
   
-  html {
+  html{
     position:relative;
     min-height:100%;
   }
