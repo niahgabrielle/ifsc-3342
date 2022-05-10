@@ -9,9 +9,8 @@ body{
   .logo{
     max-width:100%;
     height:auto;
-    align-self:center;
   }
-
+  
   .card{
     margin-bottom:25px;
   }
