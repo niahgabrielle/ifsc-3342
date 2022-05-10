@@ -1,0 +1,12 @@
+body{
+    font-family: 'Indie Flower', cursive;
+    line-height:1.5;
+    background:pink;
+    text-align:center;
+  }
+  
+  h1{
+    color:black;
+    text-shadow: 2px 3px white;
+    font-size:60px;
+  }
